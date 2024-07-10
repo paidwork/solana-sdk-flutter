@@ -1,0 +1,36 @@
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+*"
+
+jobs:
+  publish:
+    name: 'Publish to pub.dev'
+    environment: ${{ inputs.environment }}
+    permissions:
+      id-token: write # This is required for requesting the JWT
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository
+      - uses: actions/checkout@v4
+      # Setup Dart SDK with JWT token
+      - name: Setup Flutter SDK
+        uses: flutter-actions/setup-flutter@v3
+        with:
+          channel: stable
+          version: 3.0.2
+
+      - name: Install dependencies
+        run: flutter pub get
+      
+      - uses: dart-lang/setup-dart@f0ead981b4d9a35b37f30d36160575d60931ec30
+      # Minimal package setup and dry run checks.
+      - name: Publish - dry run
+        run: dart pub publish --dry-run
+        working-directory: ${{ inputs.working-directory }}
+      # Publishing...
+      - name: Publish to pub.dev
+        run: dart pub publish -f
+        working-directory: ${{ inputs.working-directory }}
