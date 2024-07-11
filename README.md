@@ -3,34 +3,34 @@
 </p>
 
 <h3 align="center">
-  Send & Receive secure Blockchain transactions on Solana with Worken
+  Create, Send, Receive, Swap, Burn and Tax on Solana Blockchain
 </h3>
 <p align="center">
-  🚀 Over 20M+ Users using Worken!
+  🚀 Over 20K Worken holders!
 </p>
 
 <p align="center">
-  <a href="https://github.com/paidworkco/worken-sdk-flutter">
-    <img alt="GitHub Repository Stars Count" src="https://img.shields.io/github/stars/paidworkco/worken-sdk-flutter?style=social" />
+  <a href="https://github.com/paidwork/solana-sdk-flutter">
+    <img alt="GitHub Repository Stars Count" src="https://img.shields.io/github/stars/paidwork/solana-sdk-flutter?style=social" />
   </a>
-    <a href="https://x.com/paidworkco">
-        <img alt="Follow Us on X" src="https://img.shields.io/twitter/follow/paidworkco?style=social" />
-    </a>
+  <a href="https://x.com/paidworkco">
+      <img alt="Follow Us on X" src="https://img.shields.io/twitter/follow/paidworkco?style=social" />
+  </a>
 </p>
 <p align="center">
     <a href="https://pub.dev/packages/worken_sdk"><img src="https://img.shields.io/pub/v/worken_sdk" alt="Pub"></a>
     <a href="http://commitizen.github.io/cz-cli/">
         <img alt="Commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" />
     </a>
-    <a href="https://github.com/paidworkco/worken-sdk-php">
-        <img alt="License" src="https://img.shields.io/github/license/paidworkco/worken-sdk-php" />
+    <a href="https://github.com/paidwork/solana-sdk-flutter">
+        <img alt="License" src="https://img.shields.io/github/license/paidwork/solana-sdk-flutter" />
     </a>
-    <a href="https://github.com/paidworkco/worken-sdk-php/pulls">
+    <a href="https://github.com/paidwork/solana-sdk-flutter/pulls">
         <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
     </a>
 </p>
 
-SDK library providing access to make easy and secure Blockchain transactions with Worken. <a href="https://www.paidwork.com/worken?utm_source=github.com&utm_medium=referral&utm_campaign=readme" target="_blank">Read more</a> about Worken Token.
+<a href="https://www.paidwork.com/worken?utm_source=github.com&utm_medium=referral&utm_campaign=readme" target="_blank">Read more</a> about Worken Token.
 
 ## Configuration
 To ensure flexibility and ease of integration, the Worken SDK allows for configuration through environmental variables. These variables can be set directly in your project's .env file. Below is a list of available configuration variables along with their descriptions:
